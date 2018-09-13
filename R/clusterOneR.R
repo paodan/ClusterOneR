@@ -199,7 +199,6 @@ clusterOneR = function(inputFile = paste0(system.file('extdata', package = 'Clus
 
   outputFormat = match.arg(outputFormat)
   stopifnot(outputFormat %in% c("plain", "csv", "genepro"))
-  minDensity = match.arg(minDensity)
 
   if (is.character(minDensity)){
     stopifnot(minDensity == "auto")
